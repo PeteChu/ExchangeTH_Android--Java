@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Currency Code"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        style="@style/SubheadingFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exchange" />
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:id="@+id/btn_enter_currency"
+        style="@style/NormalFont"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Currency"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingRight="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_currency_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:text="Code"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/NormalFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="฿" />
+
+        <TextView
+            android:id="@+id/tv_currency_calculated"
+            style="@style/NormalFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="end"
+            android:text="0" />
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <TextView
+        android:id="@+id/btn_calculate"
+        style="@style/NormalFont"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Calculate" />
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <TextView
+        style="@style/SubheadingFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank" />
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <TextView
+        style="@style/NormalFont"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="BankName" />
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f0f0f0" />
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/NormalFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="Buy" />
+
+        <TextView
+            android:id="@+id/tv_currency_calculate_buy"
+            style="@style/NormalFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="end"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/NormalFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="Sell" />
+
+        <TextView
+            android:id="@+id/tv_currency_calculate_sell"
+            style="@style/NormalFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="end"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/GreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#f0f0f0" />
+
+
+</LinearLayout>
